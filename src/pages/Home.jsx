@@ -21,7 +21,7 @@ const SearchContainer = styled.div`
 
 const ResultContainer = styled.div`
   width: 40%;
-  height: 20rem;
+  height: 25rem;
   float: left;
   padding: 1rem;
   font-family: Roboto;

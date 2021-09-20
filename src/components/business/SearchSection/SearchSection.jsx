@@ -42,6 +42,7 @@ export default function SearchField(props) {
             node {
               id
               name
+              url
             }
           }
         }
