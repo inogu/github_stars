@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Button from "../../layout/button";
 import SearchField from "../../layout/Field";
 
 const Sentence = styled.h2`
@@ -11,16 +10,11 @@ const Sentence = styled.h2`
   padding-bottom: 1rem;
 `;
 
-const Section = styled.div`
-  align-content: space-between;
-`;
-
 export default function SearchSection() {
   return (
-    <Section>
+    <div>
       <Sentence>Preencha o nome ou apelido do usuário</Sentence>
       <SearchField />
-      <Button onClick={() => {}}>Pesquisar</Button>
-    </Section>
+    </div>
   );
 }
