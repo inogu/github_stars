@@ -1,6 +1,9 @@
+import { useState } from "react";
 import styled from "styled-components";
 import SearchField from "../components/business/SearchSection/SearchSection";
 import Layout from "../components/layout/layout";
+import ResultSection from "../components/business/ResultsSection/ResultsSection";
+import ProfileSection from "../components/business/ProfileSection/ProfileSection";
 
 const Container = styled.section`
   height: 40rem;
@@ -33,30 +36,25 @@ const ProfileContainer = styled.div`
   font-family: Roboto;
 `;
 
-const Title = styled.h1`
-  font-size: 1.5em;
-  color: black;
-  font-family: Roboto;
-  font-weight: 400;
-  margin-bottom: auto;
-  text-align: center;
-  padding: 0.5rem;
-`;
-
 export default function Home() {
+  const [dadosUsuario, setDadosUsuario] = useState({});
   return (
     <Layout>
       <Container>
         <SearchContainer>
-          <SearchField />
+          <SearchField
+            handleResultado={(dataUser) => {
+              setDadosUsuario(dataUser);
+            }}
+          />
         </SearchContainer>
 
         <ResultContainer>
-          <Title>RESULTADOS</Title>
+          <ResultSection dados={dadosUsuario} />
         </ResultContainer>
 
         <ProfileContainer>
-          <Title>PROFILE</Title>
+          <ProfileSection dados={dadosUsuario} />
         </ProfileContainer>
       </Container>
     </Layout>
