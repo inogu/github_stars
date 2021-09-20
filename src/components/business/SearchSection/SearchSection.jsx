@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import GetUser from "../../../services";
 import Button from "../../layout/button";
 import SearchField from "../../layout/Field";
 
@@ -17,21 +16,11 @@ const Section = styled.div`
 `;
 
 export default function SearchSection() {
-  const pesquisarUsuario = () => {
-    return <GetUser />;
-  };
-
   return (
     <Section>
       <Sentence>Preencha o nome ou apelido do usuário</Sentence>
       <SearchField />
-      <Button
-        onClick={() => {
-          pesquisarUsuario();
-        }}
-      >
-        Pesquisar
-      </Button>
+      <Button onClick={() => {}}>Pesquisar</Button>
     </Section>
   );
 }
