@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Title from "./title";
 
 const Header = styled.header`
   display: block;
@@ -12,16 +13,6 @@ const Header = styled.header`
   align-items: center;
   font-size: calc(10px + 2vmin);
   border-bottom: solid;
-`;
-
-const Title = styled.h1`
-  font-size: 1.5em;
-  color: black;
-  font-family: Roboto;
-  font-weight: 400;
-  margin-bottom: auto;
-  text-align: center;
-  padding: 0.5rem;
 `;
 
 const MainHeader = () => {
