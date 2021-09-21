@@ -19,7 +19,7 @@ const SearchContainer = styled.div`
   font-family: Roboto;
 `;
 
-const ResultContainer = styled.div`
+const ProfileContainer = styled.div`
   width: 40%;
   height: 25rem;
   float: left;
@@ -27,7 +27,7 @@ const ResultContainer = styled.div`
   font-family: Roboto;
 `;
 
-const ProfileContainer = styled.div`
+const ResultContainer = styled.div`
   border-left: solid;
   margin-left: 50%;
   width: 40%;
@@ -49,13 +49,13 @@ export default function Home() {
           />
         </SearchContainer>
 
-        <ResultContainer>
-          <ResultSection dados={dadosUsuario} />
-        </ResultContainer>
-
         <ProfileContainer>
           <ProfileSection dados={dadosUsuario} />
         </ProfileContainer>
+
+        <ResultContainer>
+          <ResultSection dados={dadosUsuario} />
+        </ResultContainer>
       </Container>
     </Layout>
   );
