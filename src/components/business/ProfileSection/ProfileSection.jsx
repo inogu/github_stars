@@ -11,7 +11,7 @@ const Dado = styled.h3`
 `;
 
 const StyledImage = styled.img`
-  width: 20%;
+  width: 15rem;
   float: left;
   margin-right: 10px;
 `;
