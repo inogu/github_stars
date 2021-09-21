@@ -10,11 +10,18 @@ const Dado = styled.h3`
   padding-bottom: 1rem;
 `;
 
+const StyledImage = styled.img`
+  width: 20%;
+  float: left;
+  margin-right: 10px;
+`;
+
 export default function ProfileSection(props) {
   return (
     <div>
       <Title>Profile</Title>
-      <Dado>{props.dados.avatarUrl}</Dado>
+
+      <StyledImage src={props.dados.avatarUrl} />
       <Dado>{props.dados.bio}</Dado>
       <Dado>{props.dados.email}</Dado>
       <Dado>{props.dados.location}</Dado>
