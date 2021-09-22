@@ -5,9 +5,9 @@ import styled from "styled-components";
 
 const GridContainer = styled.div`
   background-color: #aaa;
-  height: 80%;
+  height: 20rem;
   margin: auto;
-  width: 80%;
+  width: 100%;
 `;
 
 export default function ResultsSection(props) {
@@ -30,7 +30,7 @@ export default function ResultsSection(props) {
       <Title>Repositórios estrelados</Title>
       <br />
       <GridContainer>
-        <DataGrid rows={data} columns={columns} pageSize={5} />
+        <DataGrid rows={data} columns={columns} pageSize={4} />
       </GridContainer>{" "}
     </div>
   );

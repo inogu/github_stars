@@ -30,8 +30,8 @@ const ProfileContainer = styled.div`
 const ResultContainer = styled.div`
   border-left: solid;
   margin-left: 50%;
-  width: 40%;
-  height: 20rem;
+  width: 48%;
+  height: 25rem;
   padding: 1rem;
   font-family: Roboto;
 `;
